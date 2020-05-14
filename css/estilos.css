@@ -1,0 +1,75 @@
+/*Titulo*/
+.titulo{
+  font-size: 20px;
+  text-align: center;
+}
+
+/* Inicio de Landing Page*/
+body, main{
+  margin: 0;
+  font-size: 20px;
+  font-family: 'Love Ya Like A Sister';
+  align-content: center;
+}
+
+/* Menu */
+
+header{
+	margin:0;
+  width: 100%;
+  color: #fff;
+  background-color: #BB130E;
+  display: inline-flex;
+}
+
+nav {
+  font-family: 'DM Serif Text';
+  overflow: auto;
+}
+
+#menu a, #menu h1, #menu ul, #menu li {
+	text-decoration: none;
+  font-family: 'Love Ya Like A Sister';
+  margin: 5px 10px;
+  display: inline-flex;
+}
+
+.enlace{
+  color: #FFF;
+}
+
+.enlace:hover{
+  color: #00FF00;
+}
+
+
+/* Diseño tableta. */
+@media (min-width: 768px) and (max-width: 1024px) {
+  body, header, main, footer{
+  	width: 100%;
+    margin: 0px;
+  }
+
+  #menu {
+    justify-content: center;
+  }
+
+}
+
+/* Diseño telefono. */
+@media (min-width: 221px) and (max-width: 767px) {
+body, header, main, footer, nav{
+	width: 100%;
+  margin: 0px;
+  text-align: center;
+}
+
+#menu,  #menu h1, #menu li{
+  flex-direction: column;
+  display: block;
+  margin: 0px 0px;
+  justify-content: center;
+}
+
+
+}
